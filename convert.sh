@@ -20,7 +20,7 @@ has_postfix=1
 repo=""
 ssh="git@github.com:"
 
-[ "$2" == "-d" ] && { echo -e "Debug mode:\n" ; }
+[ "$2" == "-d" ] && { echo -e "Debug mode:\n==========" ; }
 
 [ -z $https_adr ] && { [ "$2" == "-d" ] && { echo "There is no kind of github repository link. Program terminates." ; } ; exit 0 ; }
 
@@ -39,6 +39,8 @@ temp=${end#*.}
 
 [ $has_postfix == "0" ] && { repo=${https_adr:$prefix_size} ; } || { 
 repo=${https_adr:$prefix_size:(($https_adr_size-$prefix_size-$postfix_size))} ; }
+
+[ "$2" == "-d" ] && { echo -e "==========" ; }
 
 echo -e "Original link:\n"$https_adr
 echo $ssh$repo$postfix
