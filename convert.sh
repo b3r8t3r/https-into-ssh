@@ -42,5 +42,4 @@ repo=${https_adr:$prefix_size:(($https_adr_size-$prefix_size-$postfix_size))} ; 
 
 [ "$2" == "-d" ] && { echo -e "==========" ; }
 
-echo -e "Original link:\n"$https_adr
-echo -e "Resulting link:\n"$ssh$repo$postfix
+[ "$2" == "-s" ] && { echo -e $ssh$repo$postfix ; } || { echo -e "Original link:\n"$https_adr ; echo -e "Resulting link:\n"$ssh$repo$postfix ; }
