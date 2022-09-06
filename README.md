@@ -40,10 +40,23 @@ git@github.com:ShuvVa/https-into-ssh.git
 Debug mode:
 ==========
 There is github link!
-There are .git addition!
+There is .git addition!
 ==========
 Original link:
 https://github.com/ShuvVa/https-into-ssh.git
+Resulting link:
+git@github.com:ShuvVa/https-into-ssh.git
+```
+
+```bash
+./convert.sh https://github.com/ShuvVa/https-into-ssh -d
+Debug mode:
+==========
+There is github link!
+There is no .git addition.
+==========
+Original link:
+https://github.com/ShuvVa/https-into-ssh
 Resulting link:
 git@github.com:ShuvVa/https-into-ssh.git
 ```
