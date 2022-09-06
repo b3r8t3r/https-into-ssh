@@ -33,7 +33,7 @@ temp=${end#*.}
 
 [ $end == $temp ] && { [ "$2" == "-d" ] && { echo "There is no .git addition." ; } ; has_postfix=0 ; }
 [ $end != $temp ] && { [ $postfix != ".$temp" ] && 
-{ echo "This link is not github repository. Program terminates." ; exit 1 ; } || { [ "$2" == "-d" ] && { echo "There are .git addition" ; } ; postfix_index=$(($https_adr_size-$postfix_size-1)) ; } ; }
+{ echo "This link is not github repository. Program terminates." ; exit 1 ; } || { [ "$2" == "-d" ] && { echo "There are .git addition!" ; } ; postfix_index=$(($https_adr_size-$postfix_size-1)) ; } ; }
 
 [ $postfix_index -eq "-1" ] && { postfix_index=$(($https_adr_size-1)) ; }
 
@@ -43,4 +43,4 @@ repo=${https_adr:$prefix_size:(($https_adr_size-$prefix_size-$postfix_size))} ; 
 [ "$2" == "-d" ] && { echo -e "==========" ; }
 
 echo -e "Original link:\n"$https_adr
-echo $ssh$repo$postfix
+echo -e "Resulting link:\n"$ssh$repo$postfix

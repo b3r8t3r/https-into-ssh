@@ -23,6 +23,7 @@ Start script with link on needed **github** repo and script will return ssh link
 ./convert.sh https://github.com/ShuvVa/https-into-ssh.git
 Original link:
 https://github.com/ShuvVa/https-into-ssh.git
+Resulting link:
 git@github.com:ShuvVa/https-into-ssh.git
 ```
 
@@ -30,6 +31,19 @@ git@github.com:ShuvVa/https-into-ssh.git
 ./convert.sh https://github.com/ShuvVa/https-into-ssh
 Original link:
 https://github.com/ShuvVa/https-into-ssh
+Resulting link:
 git@github.com:ShuvVa/https-into-ssh.git
 ```
 
+```bash
+./convert.sh https://github.com/ShuvVa/https-into-ssh.git -d
+Debug mode:
+==========
+There is github link!
+There are .git addition!
+==========
+Original link:
+https://github.com/ShuvVa/https-into-ssh.git
+Resulting link:
+git@github.com:ShuvVa/https-into-ssh.git
+```
