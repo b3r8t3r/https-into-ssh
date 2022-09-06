@@ -22,7 +22,7 @@ ssh="git@github.com:"
 
 [ "$2" == "-d" ] && { echo -e "Debug mode:\n==========" ; }
 
-[ -z $https_adr ] && { [ "$2" == "-d" ] && { echo "There is no kind of github repository link. Program terminates." ; } ; exit 0 ; }
+[ -z $https_adr ] && { echo "There is no kind of github repository link. Program terminates." ; exit 0 ; }
 
 [ $prefix == ${https_adr:0:19} ] && { [ "$2" == "-d" ] && { echo -e "There is github link!" ; } ; prefix_index=0 ; }
 

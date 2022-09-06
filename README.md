@@ -19,6 +19,8 @@ Start script with link on needed **github** repo and script will return ssh link
 
 ## Examples of use
 
+### Regular use
+
 ```bash
 ./convert.sh https://github.com/ShuvVa/https-into-ssh.git
 Original link:
@@ -34,6 +36,8 @@ https://github.com/ShuvVa/https-into-ssh
 Resulting link:
 git@github.com:ShuvVa/https-into-ssh.git
 ```
+
+### Debug mode
 
 ```bash
 ./convert.sh https://github.com/ShuvVa/https-into-ssh.git -d
@@ -58,5 +62,17 @@ There is no .git addition.
 Original link:
 https://github.com/ShuvVa/https-into-ssh
 Resulting link:
+git@github.com:ShuvVa/https-into-ssh.git
+```
+
+### Silent mode
+
+```bash
+./convert.sh https://github.com/ShuvVa/https-into-ssh.git -s
+git@github.com:ShuvVa/https-into-ssh.git
+```
+
+```bash
+./convert.sh https://github.com/ShuvVa/https-into-ssh -s
 git@github.com:ShuvVa/https-into-ssh.git
 ```
