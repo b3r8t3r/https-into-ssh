@@ -6,7 +6,7 @@ Just start the script and you'll get the ssh link for needed repo.
 
 ## How it works
 
-Start script with link on needed **github** repo and script will return ssh link for it. Kinda useful if you do not have access for **github** for desktop.
+Start script with link on needed **https** **github** repo and script will return **ssh** link for it. Kinda useful if you do not have access for **github** for desktop.
 
 ## Properties
 ```bash
