@@ -20,7 +20,7 @@ has_postfix=1
 repo=""
 ssh="git@github.com:"
 
-[ "$2" == "-d" ] && { echo "Debug mode:\n" ; }
+[ "$2" == "-d" ] && { echo -e "Debug mode:\n" ; }
 
 [ -z $https_adr ] && { [ "$2" == "-d" ] && { echo "There is no kind of github repository link. Program terminates." ; } ; exit 0 ; }
 
