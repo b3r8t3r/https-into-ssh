@@ -26,7 +26,7 @@ Just start the script and you'll get the ssh link for needed repo.
 
 ## Installation
 
-To install script for your local environment, start file `env-setup.sh`. After that, you could use script with command `convert`.
+To install script for your local environment, start file `env-setup.sh`. After that, you could use script with command `httpsconvert`.
 
 ## How it works
 
@@ -36,13 +36,13 @@ Start script with link on needed **https** **github** repo and script will retur
 ### For installed script
 
 ```bash
-convert <repo> [<option>]
+httpsconvert <repo> [<option>]
 ```
 
 ### For local use
 
 ```bash
-./convert.sh <repo> [<option>]
+./httpsconvert <repo> [<option>]
 ```
 
 ### Options
@@ -58,7 +58,7 @@ convert <repo> [<option>]
 #### Regular use
 
 ```bash
-convert https://github.com/ShuvVa/https-into-ssh.git
+httpsconvert https://github.com/ShuvVa/https-into-ssh.git
 Original link:
 https://github.com/ShuvVa/https-into-ssh.git
 Resulting link:
@@ -66,7 +66,7 @@ git@github.com:ShuvVa/https-into-ssh.git
 ```
 
 ```bash
-convert https://github.com/ShuvVa/https-into-ssh
+httpsconvert https://github.com/ShuvVa/https-into-ssh
 Original link:
 https://github.com/ShuvVa/https-into-ssh
 Resulting link:
@@ -76,7 +76,7 @@ git@github.com:ShuvVa/https-into-ssh.git
 #### Debug mode
 
 ```bash
-convert https://github.com/ShuvVa/https-into-ssh.git -d
+httpsconvert https://github.com/ShuvVa/https-into-ssh.git -d
 Debug mode:
 ==========
 There is github link!
@@ -89,7 +89,7 @@ git@github.com:ShuvVa/https-into-ssh.git
 ```
 
 ```bash
-convert https://github.com/ShuvVa/https-into-ssh -d
+httpsconvert https://github.com/ShuvVa/https-into-ssh -d
 Debug mode:
 ==========
 There is github link!
@@ -104,12 +104,12 @@ git@github.com:ShuvVa/https-into-ssh.git
 #### Silent mode
 
 ```bash
-convert https://github.com/ShuvVa/https-into-ssh.git -s
+httpsconvert https://github.com/ShuvVa/https-into-ssh.git -s
 git@github.com:ShuvVa/https-into-ssh.git
 ```
 
 ```bash
-convert https://github.com/ShuvVa/https-into-ssh -s
+httpsconvert https://github.com/ShuvVa/https-into-ssh -s
 git@github.com:ShuvVa/https-into-ssh.git
 ```
 
@@ -118,7 +118,7 @@ git@github.com:ShuvVa/https-into-ssh.git
 #### Default
 
 ```bash
-./convert.sh https://github.com/ShuvVa/https-into-ssh.git
+./httpsconvert https://github.com/ShuvVa/https-into-ssh.git
 Original link:
 https://github.com/ShuvVa/https-into-ssh.git
 Resulting link:
@@ -126,7 +126,7 @@ git@github.com:ShuvVa/https-into-ssh.git
 ```
 
 ```bash
-./convert.sh https://github.com/ShuvVa/https-into-ssh
+./httpsconvert https://github.com/ShuvVa/https-into-ssh
 Original link:
 https://github.com/ShuvVa/https-into-ssh
 Resulting link:
@@ -136,7 +136,7 @@ git@github.com:ShuvVa/https-into-ssh.git
 #### Debug
 
 ```bash
-./convert.sh https://github.com/ShuvVa/https-into-ssh.git -d
+./httpsconvert https://github.com/ShuvVa/https-into-ssh.git -d
 Debug mode:
 ==========
 There is github link!
@@ -149,7 +149,7 @@ git@github.com:ShuvVa/https-into-ssh.git
 ```
 
 ```bash
-./convert.sh https://github.com/ShuvVa/https-into-ssh -d
+./httpsconvert https://github.com/ShuvVa/https-into-ssh -d
 Debug mode:
 ==========
 There is github link!
@@ -164,12 +164,12 @@ git@github.com:ShuvVa/https-into-ssh.git
 #### Silent
 
 ```bash
-./convert.sh https://github.com/ShuvVa/https-into-ssh.git -s
+./httpsconvert https://github.com/ShuvVa/https-into-ssh.git -s
 git@github.com:ShuvVa/https-into-ssh.git
 ```
 
 ```bash
-./convert.sh https://github.com/ShuvVa/https-into-ssh -s
+./httpsconvert https://github.com/ShuvVa/https-into-ssh -s
 git@github.com:ShuvVa/https-into-ssh.git
 ```
 
