@@ -1,7 +1,6 @@
 #!/bin/bash
 
-[ -e $HOME/bin/httpsconvert ] || { [ -e ./httpsconvert ] || { ln convert.sh httpsconvert ; } ; mv -f -u httpsconvert $HOME/bin ; } 
-[ -e ./httpsconvert ] && { rm -rf httpsconvert ; }
+[ -e $HOME/bin/httpsconvert ] || {  cp ./httpsconvert $HOME/bin ; } 
 
 grep -q httpsconvert < $HOME/.bashrc || { $(echo "export httpsconvert=$HOME/bin/httpsconvert" >> $HOME/.bashrc) ; }
 
