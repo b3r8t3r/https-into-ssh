@@ -1,8 +1,8 @@
 #!/bin/bash
 
-[ -e $HOME/bin/convert ] || { [ -e ./convert ] || { ln convert.sh convert ; } ; mv -f -u convert $HOME/bin ; } 
-[ -e ./convert ] && { rm -rf convert ; }
+[ -e $HOME/bin/httpsconvert ] || { [ -e ./httpsconvert ] || { ln convert.sh httpsconvert ; } ; mv -f -u httpsconvert $HOME/bin ; } 
+[ -e ./httpsconvert ] && { rm -rf httpsconvert ; }
 
-grep -q convert < $HOME/.bashrc || { $(echo "export convert=$HOME/bin/convert" >> $HOME/.bashrc) ; }
+grep -q httpsconvert < $HOME/.bashrc || { $(echo "export httpsconvert=$HOME/bin/httpsconvert" >> $HOME/.bashrc) ; }
 
 exit 0
