@@ -26,7 +26,7 @@ Just start the script and you'll get the ssh link for needed repo.
 
 ## Installation
 
-To install script for your local environment, start file `env-setup.sh`. After that, you could use script with command `httpsconvert`.
+To install script for your local environment, start file `setup.sh`. After that, you could use script with command `httpsconvert`.
 
 ## How it works
 
@@ -175,4 +175,4 @@ git@github.com:ShuvVa/https-into-ssh.git
 
 ## Uninstall
 
-To uninstall script for your local environment, start file `env-uninstall.sh`. After that, script will be removed from environment.
+To uninstall script for your local environment, start file `uninstall.sh`. After that, script will be removed from environment.
