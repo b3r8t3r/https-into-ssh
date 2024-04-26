@@ -1,11 +1,13 @@
 #!/bin/bash
 
-[ -d $HOME/bin ] || { mkdir $HOME/bin ; }
+declare rc=$HOME/.$(basename $SHELL)rc
 
-[ -d $HOME/bin/httpstossh ] || { mkdir $HOME/bin/httpstossh ; }
+[ -d $HOME/.httpsintossh ] || { mkdir $HOME/.httpsintossh ; }
 
-[ -e $HOME/bin/httpstossh/httpsconvert ] || {  cp ./httpsconvert $HOME/bin/httpstossh ; } 
+[ -e $HOME/.httpsintossh/https-into-ssh ] || {  cp ./https-into-ssh $HOME/.httpsintossh ; } 
 
-grep -q httpsconvert < $HOME/.bash_aliases || { $(echo "alias httpsconvert='$HOME/bin/httpstossh/httpsconvert'" >> $HOME/.bash_aliases) ; }
+[ -e $HOME/.httpsintossh/uninstall.sh ] || {  cp ./uninstall.sh $HOME/.httpsintossh ; } 
+
+grep -q https-into-ssh < $rc || { $(echo "alias https-into-ssh='$HOME/.httpsintossh/https-into-ssh'" >> $rc) ; }
 
 exit 0

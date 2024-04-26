@@ -1,6 +1,9 @@
 #!/bin/bash
 
-[ -e $HOME/bin/httpstossh/httpsconvert ] && { rm -rf $HOME/bin/httpstossh ; }
-grep -q httpsconvert < $HOME/.bash_aliases && { sed -i".bak" '/httpsconvert/d' $HOME/.bash_aliases ; rm -rf $HOME/.bash_aliases.bak ; }
+declare rc=$HOME/.$(basename $SHELL)rc
+
+[ -e $HOME/.httpsintossh/https-into-ssh ] && { rm -rf $HOME/.httpsintossh ; }
+
+grep -q https-into-ssh < $rc && { sed -i".bak" '/https-into-ssh/d' $rc ; rm -rf $rc.bak ; }
 
 exit 0
